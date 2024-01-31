@@ -1,0 +1,179 @@
+.articles {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.articles__title {
+  font-size: 25px;
+  margin-bottom: 45px;
+}
+
+.articles__filter {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  row-gap: 5px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.articles__filter-item {
+  font-size: 12px;
+  line-height: 2;
+  color: #dbdbdb;
+  transition: all 0.3s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.articles__filter-item:hover,
+.articles__filter-item.active {
+  color: #757575;
+}
+
+.articles__items {
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 430px) {
+  .articles__items {
+    width: auto !important;
+  }
+}
+
+.articles__item {
+  width: 400px;
+}
+.articles__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 430px) {
+  .articles__item {
+    width: 100%;
+  }
+}
+
+.articles__link {
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.articles__link:hover img {
+  transform: scale(1.03);
+}
+
+.articles__link img.init {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.articles__content {
+  display: grid;
+  gap: 15px;
+}
+
+.articles__content-date {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.articles__content-link {
+  color: #2c2c2c;
+  line-height: 1.5;
+}
+.articles__content-link:hover {
+  text-decoration: underline;
+}
+
+.articles__text {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0em;
+  line-height: 1.15;
+  background-color: #fff;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 1270px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: inherit;
+}/*# sourceMappingURL=main.css.map */
